@@ -1,0 +1,14 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="~/js/site.js"></script>
+</head>
+
+<div class="text-center color_picker">
+    <h1 class="display-4" id="label">v2eTechnology</h1>
+    <label>choose color </label><input type="color" id="color" onchange="newColor(color.value)" />
+</div>
