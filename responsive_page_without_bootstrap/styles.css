@@ -1,0 +1,136 @@
+/*
+desktop:1200px;
+laptop:1024px;
+tablet:768px;
+mobile:480px;
+*/
+
+* {
+    margin : 0px;
+    padding : 0px;
+}
+
+body {
+    background: lightgray;
+}
+
+.container {
+    margin : 5%;
+}
+
+section.header {
+    justify-content: center;
+    background: white;   
+    padding: 2%;
+    margin-bottom: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
+
+div section.header p {
+    color:lightgrey
+}
+
+@media only screen and (max-width:480px){
+    section.header{
+        line-height: 25px;
+        padding : 3%;
+    }
+
+    div section.header h1 {
+        font-size: 20px;
+    }
+    
+    div section.header p {
+        font-size: 10px;
+    }
+}
+
+div section.widgets {
+    justify-content: center;  
+    margin-bottom : 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px; 
+    display: flex;
+}
+div section div.widget {
+    padding: 2%;
+    background: white;
+    width: auto;
+    border: solid 5px lightgray;
+    font-size : 12px;
+    width : 100%;
+}
+
+.widget_title {
+    color:lightslategray;
+    float: left;
+    margin-right: 8px;
+}
+.widget_info {
+    float: right;
+    color:lightgray
+}
+.widget_amount {
+    float: left;
+    font-size : 13px;
+    margin-right: 8px;;
+}
+.widget_profit {
+    color:lightgreen;
+    float: right;
+}
+.negative {
+    color: red;
+}
+.arrow {
+    padding : 5px;
+}
+.align_left {
+    text-align: right;
+}
+div section.widgets div.widget_body {
+    font-size : 12px;
+}
+
+@media screen and (max-width:360px) {
+    
+    div section.widgets {
+        justify-content: center;  
+        margin-bottom : 2%;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 30px; 
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div section div.widget {
+        padding: 2%;
+        background: white;
+        width: auto;
+        border: solid 5px lightgray;
+        font-size : 12px;
+        width : 100%;
+    }
+}
+
+@media screen and (min-width:360px) and (max-width:760px) {
+    
+    div section.widgets {
+        justify-content: center;  
+        margin-bottom : 2%;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 30px; 
+        display: flex;
+        flex-wrap: wrap;
+        width : 100%;
+    }
+    div section div.widget {
+        padding: 2%;
+        background: white;
+        border: solid 5px lightgray;
+        font-size : 12px;
+        flex: 1 0 40%;
+    }
+}
+
+
