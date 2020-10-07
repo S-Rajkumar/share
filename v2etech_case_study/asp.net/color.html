@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>S-Rajkumar</title>
+        <script type="text/javascript">
+            function newColor(color){
+                var label = document.getElementById('label');
+                label.style.color = color;
+            }
+        </script>
+        <style>
+            .color {
+                margin-right: 25%;
+                margin-left: 25%;
+                padding-top: 5%;
+                padding-bottom: 10%;
+                justify-content: center;
+                text-align: center;
+                background:lightgray
+            }
+        </style>
+    </head>
+    <body>
+        <div class="color">
+        <h1 id="label">v2eTechnology</h1>
+        <label>Choose Color </label><input type="color" id="color" text="Click" onchange="newColor(color.value)" />
+        </div>
+    </body>
+</html>

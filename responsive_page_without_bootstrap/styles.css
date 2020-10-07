@@ -134,3 +134,232 @@ div section.widgets div.widget_body {
 }
 
 
+div section.cal_chat {
+    justify-content: center;  
+    margin-bottom : 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px; 
+    display: flex;
+}
+
+div section div.calendar {
+    padding: 2%;
+    background: white;
+    width: auto;
+    border: solid 5px lightgray;
+    font-size : 12px;
+    width : 100%;
+    display: flex;
+}
+
+.head_title {
+    font-size : 15px;
+    font-weight: bold;
+}
+
+.logo {
+    padding: 3px;
+}
+#event_button {
+    float: right;
+    color:whitesmoke;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: royalblue;
+}
+
+div section div.chat {
+    padding: 2%;
+    background: white;
+    width: auto;
+    border: solid 5px lightgray;
+    font-size : 12px;
+    width : 70%;
+}
+
+#upcomming_event {
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+.events {
+    float:left;
+}
+
+.active {
+    color: yellowgreen;
+}
+.event {
+    display: block;
+    line-height: normal;
+    height:15%;
+}
+.event_icon {
+    width: 15%;
+    float: left;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+.event_data {
+    color: lightgray;
+    margin-top: 2px;
+}
+.cal_board {
+    float: right;
+}
+#view_more_events {
+    margin-top: 10px;
+    float: left;
+    color: blue;
+}
+
+.month {
+    margin-top: 10%;
+    background:white;
+    text-align: center;
+  }
+  
+  .month ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .month ul li {
+    list-style-type: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  .month .prev {
+    float: left;
+  }
+  
+  .month .next {
+    float: right;
+  }
+  
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 10%;
+    padding : 2px;
+    text-align: center;
+  }
+  
+  .days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+  }
+  
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+  }
+  
+  .days li .activee {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+  }
+
+.logo {
+    padding : 3px;
+}
+.add_member {
+    float: right;
+}
+
+.chat_body {
+    margin: 5px;
+    display:flex;
+}
+
+.profile_image {
+    width:10%;
+    margin-right:5px;
+}
+.p_image {
+    width : 80%;
+    border-radius: 50%;
+    border: solid 2px red;
+}
+.chat_history {
+    border-left: solid 1px #abb;
+    padding-left: 10px;
+}
+
+.message p {
+    padding: 3px;
+    margin-top: 2px;
+    background: white;
+    display: block;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.19);
+}
+
+.msg_time {
+    color: lightgray;
+    float: right;
+}
+.input_msg input{
+    width: 80%;
+    padding: 2%;
+    margin-top: 5%;
+    height: 8%;
+    font-size: 18px;
+}
+.input_msg span.send {
+    float: right;
+    margin-top: 5%;
+    padding-top: 3px;
+    font-size: 23px;
+}
+
+@media screen and (max-width:1024px){
+    .hide_board {
+        display: none;
+        visibility: hidden;
+    }
+    .event {
+        height: auto;
+    }
+
+    div section div.chat {
+        width : 100%;
+    }
+
+    .input_msg input{
+        padding: -1%;
+        margin-top: -4%;
+        font-size: 12px;
+    }
+    .input_msg span.send {
+        float: right;
+        margin-top: -3%;
+        padding-top: 8px;
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width:699px){
+    div section.cal_chat {
+        justify-content: center;  
+        margin-bottom : 2%;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 30px; 
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
