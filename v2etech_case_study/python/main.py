@@ -17,7 +17,7 @@ headers = {
 def show_data() :
 	data = pandas.read_csv('data.csv')
 	data_frame = pandas.DataFrame(data)
-	print(data_frame[['id','employee_name','employee_salary','employee_age']])
+	print(data_frame[['id','employee_name','employee_age']])
 
 def get_data() :
 	try :
@@ -26,7 +26,7 @@ def get_data() :
 		if response.status_code == 200 :
 			response_json = json.loads(response.text)
 			data = pandas.DataFrame(data=response_json["data"])
-			data.to_csv('data.csv')
+			data.to_csv('data1.csv')
 			return True
 		else :
 			return False
